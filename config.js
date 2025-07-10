@@ -1,7 +1,8 @@
 const P = require('pino');
 const fs = require('fs');
 const { Sequelize } = require('sequelize');
-require('dotenv').config();
+const dotenv = require('dotenv');
+dotenv.config();
 
 function convertToBool(text, fault = 'true', fault2 = 'on') {
     return ((text === fault) || (text === fault2));
